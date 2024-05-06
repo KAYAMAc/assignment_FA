@@ -1,0 +1,18 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About Page</title>
+</head>
+<body>
+    <h1>About Us</h1>
+    <p>This is the upload page.</p>
+    <a th:href="@{/}">Home</a>
+    <form th:action="@{/result}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

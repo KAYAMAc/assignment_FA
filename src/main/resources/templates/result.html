@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+</head>
+<body>
+    <h2>Data Table</h2>
+    <table border="1">
+        <tbody>
+            <tr th:each="item : ${data}">
+                <td th:text="${item.column1}">Value 1</td>
+                <td th:text="${item.column2}">Value 2</td>
+                <td th:text="${item.column1}">Value 1</td>
+                <td th:text="${item.column2}">Value 2</td>
+                <td th:text="${item.column1}">Value 1</td>
+                <td th:text="${item.column2}">Value 2</td>
+                <td th:text="${item.column1}">Value 1</td>
+                <td th:text="${item.column2}">Value 2</td>
+                <td th:text="${item.column1}">Value 1</td>
+                <td th:text="${item.column2}">Value 2</td>
+                <!-- Add more table cells as needed -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
